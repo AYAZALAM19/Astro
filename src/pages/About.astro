@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+const items = ["Dog", "Cat","Hourse" ]
 ---
 
 <html lang="en">
@@ -28,5 +29,10 @@ import { Image } from 'astro:assets';
             <li><a href="/Services" class="text-white hover:text-orange-400">Services</a></li>
         </ul>
     </nav>
+    <ul>
+        <li>{items}</li>
+    </ul>
+
+    
 </body>
 </html>
