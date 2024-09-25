@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/layout.astro";
 import Footer from "../components/Footer.astro";
 // Astro can conditionally display HTML using JSX logical operators and ternary expressions.
-const visible = false;
+const visible = true;
 ---
 
 <html lang="en">
@@ -18,7 +18,7 @@ const visible = false;
 		<Layout>
 			<h1 class=" mt-0.5">Astro Project</h1>
 		</Layout>
-		<h1 class="bg-orange-400 text-lg font-bold text-center p-5  mt-0.5">
+		<!-- <h1 class="bg-orange-400 text-lg font-bold text-center p-5  mt-0.5">
 			Astro project
 		</h1>
 		<div class="flex flex-wrap  mt-0.5">
@@ -64,11 +64,11 @@ const visible = false;
 						>Services</a>
 				</li>
 			</ul>
-		</nav>
+		</nav> -->
 
 		<!-- Astro can conditionally display HTML using JSX logical operators and ternary expressions. -->
-		{visible && <p>Show me!</p>}
-		{visible ? <p>Show me!</p> : <p class="border-2 border-lime-400 bg-emerald-700	rounded	 p-2 font-bold text-center">Else show me!</p>}
+		<!-- {visible && <p>Show me!</p>}
+		{visible ? <p>Show me!</p> : <p class="border-2 border-lime-400 bg-emerald-700	rounded	 p-2 font-bold text-center">Else show me!</p>} -->
 		<div class="max-w-2xl px-6 py-16 mx-auto space-y-12">
 			<article class="space-y-8 dark:bg-gray-100 dark:text-gray-900">
 				<div class="space-y-6">

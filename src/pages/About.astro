@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-const items = ["Dog", "Cat","Hourse" ]
+import Header from '../components/Header.astro';
+const items = [" Dog", " Cat", " Hourse" ]
 ---
 
 <html lang="en">
@@ -12,6 +13,7 @@ const items = ["Dog", "Cat","Hourse" ]
     <title>About</title>
 </head>
 <body>
+    <Header/>
     <h1 class="bg-orange-400 text-lg font-bold text-center p-5">
         About page
     </h1>
@@ -21,7 +23,7 @@ const items = ["Dog", "Cat","Hourse" ]
         <Image class='m-5' src={'https://picsum.photos/200'} alt="A bird." width="200" height="250" />
     </div>
     <br /><br />
-    <nav class="bg-gray-800 p-4 rounded-t">
+    <!-- <nav class="bg-gray-800 p-4 rounded-t">
         <ul class="flex space-x-4">
             <li><a href="/" class="text-white hover:text-orange-400">Home</a></li>
             <li><a href="/About" class="text-white hover:text-orange-400">About</a></li>
@@ -29,8 +31,8 @@ const items = ["Dog", "Cat","Hourse" ]
             <li><a href="/Services" class="text-white hover:text-orange-400">Services</a></li>
         </ul>
     </nav>
-    <ul>
-        <li>{items}</li>
+    <ul> -->
+        <li class="inline-block">{items}</li>
     </ul>
 
     
